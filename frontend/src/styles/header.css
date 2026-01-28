@@ -1,0 +1,21 @@
+.header {
+  background: #5a67d8;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.online {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.offline {
+  color: #f44336;
+  font-weight: 600;
+}
+
+
+

@@ -1,0 +1,117 @@
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+
+/* States */
+.winning {
+  border: 2px solid #4caf50;
+}
+
+
+
+.outbid {
+  border: 2px solid #f44336;
+}
+
+
+
+.ended {
+  opacity: 0.7;
+}
+
+/* Price & text */
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.timer {
+  margin: 6px 0;
+  color: #333;
+}
+
+.bidder {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+
+/* Urgent */
+.urgent .timer {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.4; }
+}
+
+/* Flash */
+.flash {
+  animation: flash 0.3s;
+}
+
+@keyframes flash {
+  from { background: #d4ffd4; }
+  to { background: white; }
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.winning-badge {
+  color: #4caf50;
+  animation: pulse 2s infinite;
+}
+
+.outbid-badge {
+  color: #f44336;
+}
+
+.ended-badge {
+  color: #777;
+}
+
+@keyframes pulse {
+  50% { transform: scale(1.05); }
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

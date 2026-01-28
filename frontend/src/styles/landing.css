@@ -1,0 +1,69 @@
+/* ---------- Landing Page ---------- */
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Title */
+.landing h1 {
+  margin-bottom: 20px;
+}
+
+/* Input */
+.landing input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 260px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Start Bidding Button */
+.landing button {
+  padding: 12px 0;
+  margin-top: 12px;
+
+  /* 👇 slightly smaller than input */
+  width: 240px;
+
+  background: white;
+  color: #5a67d8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+
+  display: inline-block;
+
+  /* Smooth interaction */
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease,
+              background 0.2s ease;
+}
+
+/* Hover effect */
+.landing button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #f5f6ff;
+}
+
+/* Active (click) effect */
+.landing button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled state */
+.landing button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
