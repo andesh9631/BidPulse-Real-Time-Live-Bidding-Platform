@@ -1,5 +1,6 @@
 const API_URL =
-  process.env.REACT_APP_API_URL || "https://bidpulse-backend-i0ho.onrender.com";
+  process.env.REACT_APP_API_URL ||
+  "https://bidpulse-live-bidding-platform-2.onrender.com";
 
 export const fetchItems = async () => {
   const res = await fetch(`${API_URL}/items`);

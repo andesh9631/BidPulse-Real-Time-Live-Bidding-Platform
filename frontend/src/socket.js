@@ -2,6 +2,8 @@ import { io } from "socket.io-client";
 
 const SOCKET_URL =
   process.env.REACT_APP_SOCKET_URL ||
-  "https://bidpulse-backend-i0ho.onrender.com";
+  "https://bidpulse-live-bidding-platform-2.onrender.com";
 
-export const socket = io(SOCKET_URL);
+export const socket = io(SOCKET_URL, {
+  transports: ["websocket"],
+});
